@@ -12,31 +12,73 @@
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/acme-logo.jpeg"
+                         width="auto"
+                         height="32px"
+                         class="d-inline-block align-top"
+                         alt="ACME Logo"
+                         loading="lazy">
+                </a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bd-target="#navbar-supported-content"
+                        aria-controls="navbar-supported-content"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                     id="navbar-supported-content">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               aria-current="page"
+                               href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="#">Platform</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2"
+                               type="search"
+                               placeholder="Search"
+                               aria-label="Search">
+                        <button class="btn btn-outline-dark"
+                                type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section id="hero">
             <h1 style="padding-top: 50px">ACME.studio Global Dashboard</h1>
             <h2 style="padding-bottom: 100px">Realtime Performance Indicators.</h2>
         </section>
-        <section id="dashboard">
-            <article id="quarter-sales-kpi">
-                <div>
+        <section id="dashboard" class="row">
+            <article id="quarter-sales-kpi" class="col-md-6">
+                <div class="card">
                     <div id="pie-placeholder"></div>
-                    <div>
-                        <h5>Quarter Sales</h5>
-                        <p>Last Quarter Sales information.</p>
-                        <a href="#">See details</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Quarter Sales</h5>
+                        <p class="card-text">Last Quarter Sales information.</p>
+                        <a class="btn btn-primary" href="#">See details</a>
                     </div>
                 </div>
             </article>
-            <article id="population-distribution-kpi">
-                <div>
+            <article id="population-distribution-kpi" class="col-md-6">
+                <div class="card">
                     <div id="axis-tick-colors-placeholder"></div>
-                    <div>
-                        <h5>Population Distribution</h5>
-                        <p>Population distribution information. Only largest cities have been considered for study.</p>
-                        <a href="#">See details</a>
+                    <div class="card-body">
+                        <h5 class="card-title">Population Distribution</h5>
+                        <p class="card-text">Population distribution information. Only largest cities have been considered for study.</p>
+                        <a class="btn btn-primary" href="#">See details</a>
                     </div>
                 </div>
             </article>
